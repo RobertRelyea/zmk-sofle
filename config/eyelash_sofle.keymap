@@ -12,10 +12,9 @@
 
 #define BASE 0
 #define GAMER 1
-#define EXPERIMENTAL 2
-#define LOWER 3
-#define RAISE 4
-#define ADJUST 5
+#define LOWER 2
+#define RAISE 3
+#define ADJUST 4
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -164,7 +163,7 @@
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4       &trans                     &none &none &none &none &none &none
 &soft_off &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF    &trans                     &none &none &none &none &none &none
 &out OUT_TOG      &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &tog GAMER         &trans                     &none &none &none &none &none &none
-&none             &none           &none           &none           &none           &tog EXPERIMENTAL  &rgb_ug RGB_TOG            &none &none &none &none &none &none
+&none             &none           &none           &none           &none           &trans  &rgb_ug RGB_TOG            &none &none &none &none &none &none
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
